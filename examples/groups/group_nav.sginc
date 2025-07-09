@@ -1,0 +1,2 @@
+<p>Previous: <a href="{ prev.path }">{ prev.title }</a></p>
+<p>Next: <a href="{ next.path }">{ next.title }</a></p>

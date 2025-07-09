@@ -1,0 +1,5 @@
+<hr>
+<div class="nav-links">
+    <a href="{ prev.path }" id="prev-link">&larr; { prev.title }</a>
+    <a href="{ next.path }" id="next-link">{ next.title } &rarr;</a>
+</div>

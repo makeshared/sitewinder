@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodies Inc | { title }</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="site-name"><a href="/italy.html">Foodies Inc</a></div>
+        <div class="nav">
+            <a href="/italy.html">Posts</a>
+            <a href="/about.html">About</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">

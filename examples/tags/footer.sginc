@@ -1,0 +1,5 @@
+<div>
+    <p>Tags:{ tags ' <a href="{ tag.page.link }" style="font-size: { tag.page.link_size }pt;">{ tag.page.title }</a>' }</p>
+</div>
+</body>
+</html>

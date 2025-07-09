@@ -1,0 +1,23 @@
+--
+title: East meets West in Hong Kong
+author: Mira
+group: Posts
+date: 2025-06-02
+tags: Hong Kong, Asia, Cantonese, Dim Sum, Street Food, Fusion
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+<div class="author-date">
+    by { author } &middot; { date }
+</div>
+<p>
+    Hong Kong cuisine represents a fascinating fusion of Cantonese culinary traditions with international influences, creating a unique gastronomic identity that reflects the city's role as a global crossroads. The foundation lies in Cantonese cooking, emphasising fresh ingredients, delicate flavours, and precise cooking techniques that preserve the natural essence of each component. From the iconic <em>dim sum</em> served in bustling tea houses to the perfectly roasted <em>char siu</em> hanging in restaurant windows, Hong Kong's food scene showcases the artistry of traditional Chinese cooking whilst embracing innovation and adaptation.
+</p>
+<p>
+    The legendary <em>cha chaan teng</em> (tea restaurants) epitomise Hong Kong's culinary creativity, serving East-meets-West comfort food that has become deeply embedded in local culture. These establishments offer everything from silky milk tea and pineapple buns to macaroni soup and Hong Kong-style French toast, creating a distinctive cafe culture that operates around the clock. Street food markets and <em>dai pai dong</em> (street stalls) provide another layer of culinary adventure, offering treats like curry fish balls, egg waffles, and stinky tofu that capture the essence of Hong Kong's vibrant street life.
+</p>
+<p>
+    Fine dining in Hong Kong has reached extraordinary heights, with the city boasting more Michelin-starred restaurants per capita than anywhere else in the world. This culinary excellence spans from traditional Cantonese establishments preserving centuries-old recipes to innovative fusion restaurants that blend Eastern and Western techniques with remarkable creativity. The city's unique position as an international financial hub has also attracted world-class chefs and diverse culinary influences, making Hong Kong a true global dining destination where food lovers can experience everything from authentic regional Chinese cuisines to cutting-edge molecular gastronomy.
+</p>
+{ include "/footer.sginc" }

@@ -1,0 +1,12 @@
+{ group "/group_nav.sginc" }
+        </div>
+        <div class="sidebar">
+            <p>Tags</p>
+            { tags '<a href="{ tag.page.link }" style="font-size: { tag.page.link_size }pt;">{ tag.page.title }</a> ' }
+        </div>
+    </div>
+    <div class="footer">
+        &copy; { current_year } Foodies Inc. All rights reserved.
+    </div>
+</body>
+</html>

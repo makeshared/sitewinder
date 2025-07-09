@@ -1,0 +1,16 @@
+--
+title: About
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+<p>
+    Foodies Inc is a celebration of global food culture, bringing together stories, traditions, and culinary delights from around the world.
+</p>
+<p>
+    We believe that food is more than sustenance—it is a bridge between cultures, a source of joy, and a way to connect with others.
+</p>
+<p>
+     Whether you are a passionate home cook, an adventurous eater, or simply curious about what makes food special in different corners of the globe, Foodies Inc invites you to join us on a journey of taste, discovery, and community.
+</p>
+{ include "/footer.sginc" }

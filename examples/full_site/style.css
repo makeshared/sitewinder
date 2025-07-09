@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f8f5f0;
+    color: #4b2e05;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a0522d;
+    color: #fff8e1;
+    padding: 1em 2em;
+}
+.topbar .site-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.topbar .site-name a {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.topbar .nav {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.topbar .nav a {
+    color: #ffd28a;
+    text-decoration: none;
+    margin-left: 2em;
+}
+.main {
+    display: flex;
+    min-height: 70vh;
+    padding: 2em;
+    gap: 2em;
+}
+.content {
+    flex: 3 1 0;
+    background: #fff8e1;
+    color: #4b2e05;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #a0522d20;
+}
+.content h1 {
+    margin-bottom: 0.1em;
+}
+.content .author-date {
+    font-size: 1em;
+    color: #b8874b;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+.sidebar {
+    flex: 1 1 0;
+    background: #ffe5b4;
+    color: #4b2e05;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #a0522d10;
+}
+.footer {
+    background: #a0522d;
+    color: #fff8e1;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links a {
+    color: #b8874b; 
+    text-decoration: none;
+    min-width: 120px;
+    text-align: center;
+}
+#prev-link {
+    text-align: left;
+}
+#next-link {
+    text-align: right;
+    margin-left: auto;
+}
+.nav-links a[href="#"] {
+    /* hide prev/next link(s) if there is no prev/next page to link to */
+    display: none;
+}
+.content hr {
+    border: none;
+    border-top: 1px solid #b8874b;
+    margin: 2em 0;
+}
+@media (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1em;
+    }
+    .content, .sidebar {
+        border-radius: 8px;
+        box-shadow: 0 2px 8px #0001;
+        padding: 1em;
+    }
+}

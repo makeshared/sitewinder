@@ -1,0 +1,23 @@
+--
+title: Danish Delights
+author: Kim
+group: Posts
+date: 2025-04-03
+tags: Smørrebrød, Denmark
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+<div class="author-date">
+    by { author } &middot; { date }
+</div>
+<p>
+    <i>Smørrebrød</i> is a beloved Danish culinary tradition, consisting of open-faced sandwiches artfully arranged on dense, dark rye bread. Each slice is generously topped with a variety of ingredients, such as pickled herring, roast beef, eggs, shrimp, or liver pâté, often accompanied by crisp vegetables and flavourful garnishes. The careful layering and attention to detail make smørrebrød as visually appealing as it is delicious.
+</p>
+<p>
+    Traditionally enjoyed at lunchtime, smørrebrød is more than just a meal—it's a celebration of Danish hospitality and craftsmanship. Families and friends gather around the table to share different varieties, savouring each bite and the stories that come with them. Whether served at home, in a cosy café, or at a festive gathering, smørrebrød reflects the Danish appreciation for quality ingredients and simple pleasures.
+</p>
+<p>
+    The etiquette of eating smørrebrød is also part of the experience. Each piece is typically eaten with a knife and fork, and there is a customary order to the toppings, starting with fish and ending with cheese. This ritual underscores the respect for tradition and the communal spirit that defines Danish food culture.
+</p>
+{ include "/footer.sginc" }

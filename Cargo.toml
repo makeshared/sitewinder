@@ -1,0 +1,18 @@
+[package]
+name = "sitewinder"
+version = "1.0.0"
+edition = "2021"
+authors = ["Carsten Hansen <git@carstenhansen.com>"]
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0.98"
+chrono = "0.4.41"
+clap = { version = "4.5.37", features = ["derive"] }
+fs = "0.0.5"
+lazy_static = "1.5.0"
+pathdiff = "0.2.3"
+percent-encoding = "2.3.1"
+regex = "1.11.1"
+walkdir = "2.5.0"
+webbrowser = "1.0.5"

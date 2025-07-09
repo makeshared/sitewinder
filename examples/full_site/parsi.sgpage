@@ -1,0 +1,23 @@
+--
+title: Flavours of Fire and Heritage
+author: Drew
+group: Posts
+date: 2025-05-14
+tags: Parsi, Persia, India, Asia, Curries, Culture
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+<div class="author-date">
+    by { author } &middot; { date }
+</div>
+<p>
+    Parsi cuisine, a unique fusion born from Persian heritage and Indian influences, is renowned for its aromatic spices, sweet-savoury combinations, and time-honoured cooking methods. From elaborate wedding feasts to everyday family meals, this culinary tradition offers an exquisite blend of flavours. Signature dishes such as <i>dhansak</i> (lentil curry with meat), <i>patra ni machhi</i> (fish steamed in banana leaves), and fragrant <i>pulao</i> showcase the community's mastery of balancing Persian techniques with local Indian ingredients.
+</p>
+<p>
+    Dining in Parsi households is a celebration of togetherness and tradition. The elaborate Sunday <i>dhansak</i> lunch, served with brown rice and <i>kachumber</i> salad, brings families together around tables laden with multiple courses. Traditional <i>berry pulao</i> with its jewel-like barberries, and the beloved <i>sali boti</i> (meat curry topped with crispy potato sticks) reflect the community's love for textures and complex flavours that tell stories of migration and adaptation.
+</p>
+<p>
+    The essence of Parsi cuisine lies in its perfect marriage of Persian ancestry and Indian innovation. Whilst ancient recipes like <i>ravo</i> (sweet semolina pudding) and <i>malido</i> (wheat halwa) preserve ancestral traditions, modern Parsi cooks continue to evolve these dishes with contemporary touches. Whether savouring a delicate <i>patrel</i> (steamed colocasia leaves) or indulging in a rich <i>lagan nu custard</i>, each meal is a testament to cultural resilience, culinary artistry, and the warmth of Parsi hospitality.
+</p>
+{ include "/footer.sginc" }

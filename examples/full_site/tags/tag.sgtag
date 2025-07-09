@@ -1,0 +1,8 @@
+--
+title: { title }
+--
+
+{ include "/header.sginc" }
+<h1>Pages tagged { title }</h1>
+{ pages '<p><a href="{ page.link }">{ page.title }</a></p>' }
+{ include "/footer.sginc" }

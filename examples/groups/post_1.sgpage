@@ -1,0 +1,9 @@
+--
+title: First Post
+group: Posts
+date: 2023-10-01
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+{ include "/footer.sginc" }

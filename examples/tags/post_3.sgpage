@@ -1,0 +1,9 @@
+--
+title: Best Hikes in the Dolomites
+date: 2025-01-31
+tags: Posts, Hiking, Italy
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+{ include "/footer.sginc" }

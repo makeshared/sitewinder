@@ -1,0 +1,23 @@
+--
+title: The Italian Way
+author: Alex
+group: Posts
+date: 2025-02-12
+tags: Coffee, Italy
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+<div class="author-date">
+    by { author } &middot; { date }
+</div>
+<p>
+    Italian coffee culture is a vibrant and integral part of daily life across the country. From the bustling espresso bars of Rome to the quiet cafés in small towns, coffee is more than just a beverage—it's a cherished ritual. Italians typically start their day with a quick shot of espresso or a creamy cappuccino, often enjoyed standing at the bar while exchanging greetings with the barista and fellow patrons.
+</p>
+<p>
+    The Italian approach to coffee is rooted in simplicity and tradition. Drinks like cappuccino and caffè latte are reserved for the morning hours, while espresso is enjoyed throughout the day, usually after meals. Ordering a "latte" in Italy will get you a glass of milk, so it's important to use the correct terminology. Coffee is rarely taken to go; instead, Italians prefer to savour their coffee in the company of others, making it a social experience as much as a culinary one.
+</p>
+<p>
+    Regional variations add to the richness of Italian coffee culture. In Naples, the espresso is strong and intense, while in the north, it may be lighter and served with a glass of water. Regardless of location, the emphasis is always on quality, tradition, and the pleasure of taking a moment to enjoy life—one cup at a time.
+</p>
+{ include "/footer.sginc" }

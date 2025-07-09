@@ -1,0 +1,9 @@
+--
+title: Long Weekend in Milan
+date: 2024-01-15
+tags: Posts, Holidays, 2024, Italy
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+{ include "/footer.sginc" }

@@ -1,0 +1,9 @@
+--
+title: Picnic at Covadonga Lakes
+date: 2024-09-21
+tags: Posts, Hiking, 2024, Spain
+--
+
+{ include "/header.sginc" }
+<h1>{ title }</h1>
+{ include "/footer.sginc" }
