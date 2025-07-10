@@ -132,7 +132,8 @@ impl Page {
         self.process_includes();
 
         // Process { title }
-        self.contents = self.replace_all(&RE_TITLE, &self.metadata.title);
+        let escaped_title = escape_html_characters(&self.metadata.title);
+        self.contents = self.replace_all(&RE_TITLE, &escaped_title);
 
         // Process { date }
         let date_string = self.metadata.date.map_or(
@@ -140,7 +141,8 @@ impl Page {
         self.contents = self.replace_all(&RE_DATE, &date_string);
 
         // Process { author }
-        self.contents = self.replace_all(&RE_AUTHOR, &self.metadata.author);
+        let escaped_author = escape_html_characters(&self.metadata.author);
+        self.contents = self.replace_all(&RE_AUTHOR, &escaped_author);
 
         // Process { current_year }
         self.contents = self.replace_all(&RE_CURRENT_YEAR, &self.current_year);
@@ -258,5 +260,35 @@ impl Page {
         let mut path = PathBuf::from(&self.root_path);
         path.push(relative_path.strip_prefix("/").unwrap_or(relative_path));
         path
+    }
+}
+
+fn escape_html_characters(input: &str) -> String {
+    input.replace('<', "&lt;").replace('>', "&gt;")
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use std::path::Path;
+
+    // Test that reserved characters '<' and '>' in the title and author metadata are escaped correctly.
+    #[test]
+    fn test_title_author_metadata_escaped() {
+        let template = TemplateSource::Memory(String::from(
+            "--\ntitle: <>\nauthor: ><\n--\n\
+            <!DOCTYPE html><html><head><title>{title}</title></head><body>{author}</body></html>"
+        ));
+
+        let escaped_contents = String::from(
+            "<!DOCTYPE html><html><head><title>&lt;&gt;</title></head><body>&gt;&lt;</body></html>"
+        );
+
+        let mut page = Page::new(Path::new(""), &PathBuf::new(), &template, "");
+
+        page.process_metadata().unwrap();
+        page.generate(None, None, &BTreeMap::new());
+
+        assert_eq!(page.contents, escaped_contents);
     }
 }
