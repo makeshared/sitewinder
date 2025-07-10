@@ -125,7 +125,7 @@ impl Page {
         self.metadata.clone()
     }
 
-    pub fn generate(&mut self, prev: Option<Metadata>, next: Option<Metadata>, tags: &BTreeMap<String, TagPage>) -> Result<(), anyhow::Error> {
+    pub fn generate(&mut self, prev: Option<Metadata>, next: Option<Metadata>, tags: &BTreeMap<String, TagPage>) {
         println!("generating page '{}'", &self.metadata.path);
 
         // Process { include "<path>" } blocks
@@ -215,8 +215,10 @@ impl Page {
 
         // Rewrite all links and references to be relative to this document
         self.contents = super::rewrite_local_links(&self.contents, &self.output_path, &self.root_path);
+    }
 
-        // Write output HTML file
+    pub fn write(&self) -> Result<(), anyhow::Error> {
+        // Write the processed contents to the output HTML file
         write(&self.output_path, &self.contents)
             .with_context(|| format!("Unable to write output HTML file '{}'", &self.output_path.display()))
     }

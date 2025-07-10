@@ -206,7 +206,8 @@ impl SiteGen {
                 // These are pages that do not belong to any group.
                 // They are generated without any grouping or prev/next links.
                 for page in pages {
-                    page.generate(None, None, &self.tags)?;
+                    page.generate(None, None, &self.tags);
+                    page.write()?;
                 }
                 continue;
             }
@@ -232,8 +233,9 @@ impl SiteGen {
                     None
                 };
 
-                // Generate the page (this will write the HTML file to disk)
-                pages[i].generate(prev, next, &self.tags)?;
+                // Generate the page and write the HTML file to disk
+                pages[i].generate(prev, next, &self.tags);
+                pages[i].write()?;
             }
         }
         Ok(())
